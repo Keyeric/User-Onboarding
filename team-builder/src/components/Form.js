@@ -38,7 +38,7 @@ function formComp() {
       <label>
         {" "}
         Email address <br />
-        <input
+        <Field
           onChange={event => {
             setEmailinput(event.target.value);
           }}
@@ -53,7 +53,7 @@ function formComp() {
       <label>
         {" "}
         Password <br />
-        <input
+        <Field
           onChange={event => {
             setPWinput(event.target.value);
           }}
@@ -68,7 +68,7 @@ function formComp() {
       <label>
         {" "}
         Did you read the <span id="TOS"> Terms of Service</span>?
-        <input
+        <Field
           onChange={event => {
             setTOSinput(event.target.checked);
           }}
@@ -79,7 +79,7 @@ function formComp() {
       </label>
 
       <br />
-      <input type="submit"  />
+      <Field type="submit"  />
     </Form>
   );
 }
